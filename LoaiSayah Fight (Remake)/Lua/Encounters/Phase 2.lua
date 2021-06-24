@@ -28,7 +28,7 @@ function OnDeath()
 		currentdialogue = {"He, I didn't think ya would die that easily", "Well bye 'pal'"}
  end
 
-Misc.WindowName = "GameTale: LoaiSayah Fight (Phase 3)"
+Misc.WindowName = "GameTale: LoaiSayah Fight (Phase 2)"
 
 
 enemies = {

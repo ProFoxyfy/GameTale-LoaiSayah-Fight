@@ -1,11 +1,13 @@
-﻿-- A basic monster script skeleton you can copy and modify for your own creations.
+﻿local screen_fader = require("Libraries/screen_fade")
+
+-- A basic monster script skeleton you can copy and modify for your own creations.
 commands = {"Tell", "Check"}
 comments = {"The last time you are gonna meet him...", "...", "It's Thanos but LoaiSayah"}
 randomdialogue = {"You are gonna regret EVERYTHING!!!!!", "Dirty sociopath!", "You are gonna fail!", "No-way you are gonna defeat me!"}
 
 sprite = "phase3"
 name = "LoaiSayah"
-hp = 2
+hp = 2000
 atk = 100
 def = 100
 gold = 99
@@ -42,7 +44,5 @@ function HandleCustomCommand(command)
 end
 
 function OnDeath()
-Audio.Stop()
-Encounter.Call("FadeOut")
-Kill()
+screen_fader.FadeOut()
 end
